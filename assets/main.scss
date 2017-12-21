@@ -1,0 +1,47 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+
+/*This is to center the image*/
+.center {
+    text-align: center;
+}
+
+/*Caption*/
+img + em { 
+display: block; 
+text-align: center;
+font-size: 0.85em;
+font-weight: bold;
+}
+
+/*Table*/
+table{
+    border-collapse: collapse;
+    border:1px solid #666666;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 12px;
+}
+
+th{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+    background-color: #666666;
+    color: white;
+    padding: 5px
+}
+
+td{
+    border:1px solid #ffffff;
+    padding: 5px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+	border:1px solid #f2f2f2;
+}
