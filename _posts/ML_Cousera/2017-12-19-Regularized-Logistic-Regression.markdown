@@ -84,7 +84,7 @@ Train Accuracy (lambda = 1): 83.050847
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/regularized_logistic_regression/logistic_regression_boundary_lambda10.png)
-*Figure 4: Training data with decision boundary ($$\lambda=1$$)*
+*Figure 4: Training data with decision boundary ($$\lambda=10$$)*
 
 ```
 Train Accuracy (lambda = 10): 74.576271
