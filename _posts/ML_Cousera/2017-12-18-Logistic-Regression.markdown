@@ -41,7 +41,7 @@ $$J(\theta)=\frac{1}{m}\sum_{i=1}^m [-y^{(i)}\log(h_\theta(x^{(i)}))-(1-y^{(i)})
 
 and the gradient of the cost is a vector of the same length as $$\theta$$ where the $$j^{th}$$ element $$(for j=0,1,...,n)$$ is defined as follows:
 
-$$\frac{\delta J(\theta)}{\delta\theta_j}=\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)}-y^{(i)}x_j^{(i)}))$$
+$$\frac{\delta J(\theta)}{\delta\theta_j}=\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}$$
 
 Although this gradient looks very similar to the linear regression gradient, do keep in mind that the formula is actually different because linear and logistic regression have **different** hypotheses $$h_\theta(x)$$. Now that we have all fundamental blocks of information, it is now time to assemble them together! Using initial $$\theta$$=`0`, we obtain
 
