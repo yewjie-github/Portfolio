@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title:
+title: "Predicting whether Microchip passes QA Test with Regularized Logistic Regression"
 ---
 
 From our previous post, we understand that most real-world problems are not linearly separable, which means our dataset cannot be separated into positive and negative examples by a straight-line through a plot. Now, let us take a look on how this issue of be addressed.
@@ -68,7 +68,7 @@ Train Accuracy (lambda = 0): 86.440678
 ```
 
 
-To better understand the effects of $$\lambda$$, let us visualize how the decision boundary behaves and the prediction accuary varies when using different values of $$\lambda$$.
+To better understand the effects of $$\lambda$$, precisely on the matter of how regularization prevents over-fitting, let us visualize how the decision boundary behaves and the prediction accuary varies when using different values of $$\lambda$$.
 
 **When $$\lambda=1$$**
 
@@ -100,5 +100,6 @@ Train Accuracy (lambda = 10): 74.576271
 Train Accuracy (lambda = 100): 61.016949
 ```
 
+Notice the changes in the decision boundary as we vary $$\lambda$$. With a small $$\lambda=0$$, we should find that the classifier gets almost every training example correct, but draws a very complicated boundary, thus over-fitting the data like in Figure 2, therefore not a good decision boundary. With a larger $$\lambda$$ ($$\lambda$$ = `1` or $$\lambda$$ = `10`), we should see a plot that shows an simpler and straight-forward decision boundary which still separates the positives and negatives fairly well. However, if $$\lambda$$ is set to too high ($$\lambda$$ = `100`), we will not get a good fit and the decision boundary will not follow the data so well, thus under-fitting the data like in Figure 5.
 
-**How to overcome underfit/overfit**
+
