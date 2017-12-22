@@ -100,6 +100,6 @@ Train Accuracy (lambda = 10): 74.576271
 Train Accuracy (lambda = 100): 61.016949
 ```
 
-Notice the changes in the decision boundary as we vary $$\lambda$$. With a small $$\lambda=0$$, we should find that the classifier gets almost every training example correct, but draws a very complicated boundary, thus over-fitting the data like in Figure 2, therefore not a good decision boundary. With a larger $$\lambda$$ ($$\lambda$$ = `1` or $$\lambda$$ = `10`), we should see a plot that shows an simpler and straight-forward decision boundary which still separates the positives and negatives fairly well. However, if $$\lambda$$ is set to too high ($$\lambda$$ = `100`), we will not get a good fit and the decision boundary will not follow the data so well, thus under-fitting the data like in Figure 5.
+Notice the changes in the decision boundary as we vary $$\lambda$$. With a small $$\lambda=0$$, we should find that the classifier gets almost every training example correct, but draws a very complicated boundary, thus over-fitting the data like in Figure 2, therefore not a good decision boundary. With a larger $$\lambda$$ ($$\lambda$$ = `1` or $$\lambda$$ = `10`), we should see a plot that shows a simpler and straight-forward decision boundary which still separates the positives and negatives fairly well. However, if $$\lambda$$ is set to too high ($$\lambda$$ = `100`), we will not get a good fit and the decision boundary will not follow the data so well, thus under-fitting the data like in Figure 5.
 
 
