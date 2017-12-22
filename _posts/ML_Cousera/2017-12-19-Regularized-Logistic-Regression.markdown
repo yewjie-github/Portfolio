@@ -61,7 +61,7 @@ acc = mean(double(p == y)) * 100);
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/regularized_logistic_regression/logistic_regression_boundary_lambda0.png)
-*Figure 2: Training data with decision boundary ($$\lambda=0$$)*
+*Figure 2: Training data with decision boundary $$\lambda=0$$*
 
 ```
 Train Accuracy (lambda = 0): 86.440678
@@ -75,7 +75,7 @@ To better understand the effects of $$\lambda$$, precisely on the matter of how 
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/regularized_logistic_regression/logistic_regression_boundary.png)
-*Figure 3: Training data with decision boundary ($$\lambda=1$$)*
+*Figure 3: Training data with decision boundary $$\lambda=1$$*
 
 ```
 Train Accuracy (lambda = 1): 83.050847
@@ -84,7 +84,7 @@ Train Accuracy (lambda = 1): 83.050847
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/regularized_logistic_regression/logistic_regression_boundary_lambda10.png)
-*Figure 4: Training data with decision boundary ($$\lambda=10$$)*
+*Figure 4: Training data with decision boundary $$\lambda=10$$*
 
 ```
 Train Accuracy (lambda = 10): 74.576271
@@ -94,7 +94,7 @@ Train Accuracy (lambda = 10): 74.576271
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/regularized_logistic_regression/logistic_regression_boundary_lambda100.png)
-*Figure 5: Training data with decision boundary ($$\lambda=100$$)*
+*Figure 5: Training data with decision boundary $$\lambda=100$$*
 
 ```
 Train Accuracy (lambda = 100): 61.016949
