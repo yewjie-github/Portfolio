@@ -5,8 +5,8 @@ title: "Predecting Sales Profits and House Prices using Simple and Multiple Line
 
 Linear regression is one of the most common supervised machine learning methods, where we are basically taking input variables and trying to fit the output onto a continuos expected result function. Generally, there are two types of Linear regression - **simple linear regression** (sometimes called univariate linear regression) and **multiple linear regression**. The former is used when you want to predict a sinlge output from a single input, while the latter is used when you want to predict a single output form multiple inputs.
 
-#### __Simple Linear Regression__
----------------------------------
+#### Simple Linear Regression
+---
 We will first implement linear regression with one variable to predict profits for a food truck. Suppose you are the owner of a restaurant franchise and are considering different cities for opening a new outlet. Assuming the chain already has trucks in various cities and you have data for profits and populations from the cities. You would like to use this data to help you select which city to expand to next. In this problem, we will fit the linear regression parameter, $$\theta$$, to our dataset using gradient descent - specifically the batch gradient descent algorithm, where the objective is to minimize the cost function
 
 {: .center}
@@ -89,8 +89,8 @@ Whenever we want to better understand the behaviour of our cost function $$J(\th
 *Figure 4:  Visualizing cost function $$J(\theta)$$ using contour, showing minimum*.
 
 
-#### __Multiple Linear Regression__
------------------------------------
+#### Multiple Linear Regression
+---
 Another widely used variation of linear regression is multiple linear regression. In this example, we will implement linear regression with multiple variables to predict the prices of houses! Suppose we are trying to sell our house and we would like to know what a good market price would be, one way to do this is to first collection information on recent houses sold and make a model of housing prices. Our dataset contains three columns which consist of the size of the house (in sq. ft.), the number of bedrooms and finally the price of the house. The only difference of multiple linear regression to simple linear regression is that there is one more feature in the maxtrix `X`. The hypothesis function and the batch gradient descent update rule remain unchanged.
 
 But here comes a problem, all these data may varies hugely in range (imagine comapring the size of the house to the number of bed rooms) and this might slow down our gradient descent process. We can speed up gradient descent by having each of our input values in roughly the same range. This is because $$\theta$$ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven. This can be achieve via **mean normalization + feature scaling** where we subtract the mean value of each feauture from the dataset and scale (divide) the feature valus by their respective 'standard deviations'.

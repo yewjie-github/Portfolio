@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Predicting whether Microchip passes QA Test with Regularized Logistic Regression"
+title: "Microchip QA Test Classifier with Regularized Logistic Regression"
 ---
 
 From our previous post, we understand that most real-world problems are not linearly separable, which means our dataset cannot be separated into positive and negative examples by a straight-line through a plot. Now, let us take a look on how this issue of be addressed.
