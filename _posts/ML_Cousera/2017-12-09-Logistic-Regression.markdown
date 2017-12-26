@@ -18,7 +18,7 @@ plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/logistic_regression/logistic_visualize.png)
+![image]({{ site.baseurl }}/public/project-images/logistic_regression/logistic_visualize.PNG)
 *Figure 1: Visualizing the scatter plot*
 
 Now we have visualized the data, let us dig deeper into mathematical background of logistic regression. The logistic regression hypothesis is defined as:
