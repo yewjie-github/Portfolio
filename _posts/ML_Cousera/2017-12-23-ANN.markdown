@@ -103,7 +103,7 @@ Our final value of our hypothesis for a set of inputs will be one of the element
 Time to test how well did our model performs. We will try to input a digit in gray scale format and see what does the neural network predicts
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_6.png)
+![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_6.PNG)
 *Figure 3: Digit `6` in gray scale*
 
 ```
@@ -111,7 +111,7 @@ Neural Network Prediction: 6 (digit 6)
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_6_2.png)
+![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_6_2.PNG)
 *Figure 4: Digit `6` in gray scale*
 
 ```
@@ -119,7 +119,7 @@ Neural Network Prediction: 6 (digit 6)
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_4.png)
+![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_4.PNG)
 *Figure 5: Digit `4` in gray scale*
 
 ```
@@ -127,7 +127,7 @@ Neural Network Prediction: 4 (digit 4)
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_8.png)
+![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_8.PNG)
 *Figure 6: Digit `8` in gray scale*
 
 ```
@@ -135,7 +135,7 @@ Neural Network Prediction: 8 (digit 8)
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_9.png)
+![image]({{ site.baseurl }}/public/project-images/ann/correct_predict_9.PNG)
 *Figure 7: Digit `9` in gray scale*
 
 ```
@@ -145,7 +145,7 @@ Neural Network Prediction: 9 (digit 9)
 Took me quite a while (after 48 consecutive correct predicts) to finally encounter with a **wrong** prediction! The Neural Network some how get 'confused' between digit `6` and digit `9`.
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann/wrong_predict.png)
+![image]({{ site.baseurl }}/public/project-images/ann/wrong_predict.PNG)
 *Figure 8: Digit `9` in gray scale*
 
 ```
