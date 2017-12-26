@@ -68,7 +68,7 @@ Train Accuracy (lambda = 0): 86.440678
 ```
 
 
-To better understand the effects of $$\lambda$$, precisely on the matter of how regularization prevents over-fitting, let us visualize how the decision boundary behaves and the prediction accuary varies when using different values of $$\lambda$$.
+To better understand the effects of $$\lambda$$, precisely on the matter of how regularization prevents over-fitting, let us visualize how the decision boundary behaves and the prediction accuracy varies when using different values of $$\lambda$$.
 
 **When $$\lambda=1$$**
 

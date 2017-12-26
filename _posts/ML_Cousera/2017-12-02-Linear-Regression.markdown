@@ -1,9 +1,9 @@
 ---
 layout: "post"
-title: "Predecting Sales Profits and House Prices using Simple and Multiple Linear Regression"
+title: "Predicting Sales Profits and House Prices using Simple and Multiple Linear Regression"
 ---
 
-Linear regression is one of the most common supervised machine learning methods, where we are basically taking input variables and trying to fit the output onto a continuos expected result function. Generally, there are two types of Linear regression - **simple linear regression** (sometimes called univariate linear regression) and **multiple linear regression**. The former is used when you want to predict a sinlge output from a single input, while the latter is used when you want to predict a single output form multiple inputs.
+Linear regression is one of the most common supervised machine learning methods, where we are basically taking input variables and trying to fit the output onto a continuous expected result function. Generally, there are two types of Linear regression - **simple linear regression** (sometimes called univariate linear regression) and **multiple linear regression**. The former is used when you want to predict a sinlge output from a single input, while the latter is used when you want to predict a single output form multiple inputs.
 
 #### Simple Linear Regression
 ---
@@ -78,7 +78,7 @@ Theta found by gradient descent: -3.630291 1.166362
 For population = 35,000, we predict a profit of 4519.767868
 For population = 70,000, we predict a profit of 45342.450129
 ```
-Whenever we want to better understand the behaviour of our cost function $$J(\theta)$$, it is always useful to plot it and visualize, either using a surface or contour plot, because it gives us a better sense on how $$J(\theta)$$ varies with changes in $$\theta_0$$ and $$\theta_1$$.
+Whenever we want to better understand the behavior of our cost function $$J(\theta)$$, it is always useful to plot it and visualize, either using a surface or contour plot, because it gives us a better sense on how $$J(\theta)$$ varies with changes in $$\theta_0$$ and $$\theta_1$$.
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/linear_regression/surface.PNG)
@@ -91,9 +91,9 @@ Whenever we want to better understand the behaviour of our cost function $$J(\th
 
 #### Multiple Linear Regression
 ---
-Another widely used variation of linear regression is multiple linear regression. In this example, we will implement linear regression with multiple variables to predict the prices of houses! Suppose we are trying to sell our house and we would like to know what a good market price would be, one way to do this is to first collection information on recent houses sold and make a model of housing prices. Our dataset contains three columns which consist of the size of the house (in sq. ft.), the number of bedrooms and finally the price of the house. The only difference of multiple linear regression to simple linear regression is that there is one more feature in the maxtrix `X`. The hypothesis function and the batch gradient descent update rule remain unchanged.
+Another widely used variation of linear regression is multiple linear regression. In this example, we will implement linear regression with multiple variables to predict the prices of houses! Suppose we are trying to sell our house and we would like to know what a good market price would be, one way to do this is to first collection information on recent houses sold and make a model of housing prices. Our dataset contains three columns which consist of the size of the house (in sq. ft.), the number of bedrooms and finally the price of the house. The only difference of multiple linear regression to simple linear regression is that there is one more feature in the matrix `X`. The hypothesis function and the batch gradient descent update rule remain unchanged.
 
-But here comes a problem, all these data may varies hugely in range (imagine comapring the size of the house to the number of bed rooms) and this might slow down our gradient descent process. We can speed up gradient descent by having each of our input values in roughly the same range. This is because $$\theta$$ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven. This can be achieve via **mean normalization + feature scaling** where we subtract the mean value of each feauture from the dataset and scale (divide) the feature valus by their respective 'standard deviations'.
+But here comes a problem, all these data may varies hugely in range (imagine comparing the size of the house to the number of bed rooms) and this might slow down our gradient descent process. We can speed up gradient descent by having each of our input values in roughly the same range. This is because $$\theta$$ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven. This can be achieve via **mean normalization + feature scaling** where we subtract the mean value of each feature from the dataset and scale (divide) the feature values by their respective 'standard deviations'.
 
 ```matlab
 % mean normalization + feature scaling
@@ -116,7 +116,7 @@ ylabel('Cost J');
 ![image]({{ site.baseurl }}/public/project-images/linear_regression/convergence_graph.PNG)
 *Figure 5:  Graph of convergence of Cost J across 400 iterations with $$\alpha=0.01$$*
 
-In Figure 6, we tested using diffent learning rate, $$\alpha$$ to study the effects it has towards the convergence graph. It is prudent that with a higher $$\alpha$$, cost J tends to converge much faster. But do keep in mind that using a high $$\alpha$$ might affect the solution in a way where it might not be able to arrive at the global optimum since the is a high possibility of overshot. On the contary, using a low $$\alpha$$ value will increase the chance of reaching the global optimum, but it will be computational expensive, since gradient descent will be taking one small step in each interation to reach the global optimum.
+In Figure 6, we tested using different learning rate, $$\alpha$$ to study the effects it has towards the convergence graph. It is prudent that with a higher $$\alpha$$, cost J tends to converge much faster. But do keep in mind that using a high $$\alpha$$ might affect the solution in a way where it might not be able to arrive at the global optimum since the is a high possibility of overshot. On the contrary, using a low $$\alpha$$ value will increase the chance of reaching the global optimum, but it will be computational expensive, since gradient descent will be taking one small step in each iteration to reach the global optimum.
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/linear_regression/convergence_all_resize.PNG)

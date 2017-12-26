@@ -21,7 +21,7 @@ plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 ![image]({{ site.baseurl }}/public/project-images/logistic_regression/logistic_visualize.png)
 *Figure 1: Visualizing the scatter plot*
 
-Now we have visualized the data, let us dig deeper into mathmatical background of logistic regression. The logistic regrssion hypothesis is defined as:
+Now we have visualized the data, let us dig deeper into mathematical background of logistic regression. The logistic regression hypothesis is defined as:
 
 $$h_\theta(x)=g(\theta^Tx)$$
 
@@ -29,7 +29,7 @@ where function $$g$$ is the sigmoid function. The sigmoid function is defined as
 
 $$g(z) = \frac{1}{1+e^{-z}}$$
 
-As usual, let us visualize the sigmoid fucntion _a.k.a_ logistic curve using the graph as shown in Figure 2. For large positive values of $$x$$, the sigmoid should be close to $$1$$, while for large negative values, the sigmoid should be close to $$0$$.
+As usual, let us visualize the sigmoid function _a.k.a_ logistic curve using the graph as shown in Figure 2. For large positive values of $$x$$, the sigmoid should be close to $$1$$, while for large negative values, the sigmoid should be close to $$0$$.
 
 {: .center}
 ![image]({{ site.baseurl }}/public/project-images/logistic_regression/logistic_curve.png)
