@@ -18,6 +18,6 @@ _To make things less boring..._
 
 Whenever I am not within the _*SPACEBAR*_, I enjoy getting sweaty, and I can be pretty _serious_ with my workouts though! I always enjoy challenging my limits and raising my standards, the proudest challenge up to date was successfully reaching the highest submit in South East Asia - Mount. Kinabalu, and completing my first ever full marathon one day after descending from Mount. Kinabalu. Sometimes, I do some casual reading on the subject of Self-development, Investments, and **COOKBOOK!** (Gordon Ramsey is my personal favorite, Jamie Oliver comes next!). And one more thing, I always appreciate it whenever there is a Saturday night football game!
 
-Thanks for dropping by and this is pretty much about me for the time being, you can always find me on [LinkedIn](https://linkedin.com/in/yewjie) or drop me an <a href="mailto:yewjie.loo@gmail.com">email</a>. My resume is also available for download [here]({{ site.baseurl }}/public/project-images/Loo_Yew_Jie_resume_updated.pdf)!
+Thanks for dropping by and this is pretty much about me for the time being, you can always find me on [LinkedIn](https://linkedin.com/in/yewjie) or drop me an <a href="mailto:yewjie.loo@gmail.com">email</a>. My resume is also available for download <a href="https://github.com/yewjie-github/Portfolio/blob/gh-pages/public/Loo_Yew_Jie_resume_updated.pdf">here</a>!
 
 
