@@ -90,7 +90,7 @@ It is clear that with `fminunc`, we are able to get a better solution of `0.2034
 
 Therefore, using our trained model, we can now predict whether a student with get their admission based on their exams result.
 
-**Case 1: Student 'A' with exams result of `45` and `85`.**
+#### **Case 1: Student 'A' with exams result of `45` and `85`.**
 ---
 
 ```matlab
@@ -100,7 +100,7 @@ prob = sigmoid([1 45 85] * theta);
 For a student with scores 45 and 85, we predict an admission probability of 0.776289
 ```
 
-**Case 2: Student 'B' with exams result of `35` and `65`.**
+#### **Case 2: Student 'B' with exams result of `35` and `65`.**
 ---
 
 ```matlab
@@ -110,7 +110,7 @@ prob = sigmoid([1 35 65] * theta);
 For a student with scores 35 and 65, we predict an admission probability of 0.007786
 ```
 
-**Case 3: Student 'A' with exams result of `15` and `35`.**
+#### **Case 3: Student 'A' with exams result of `15` and `35`.**
 ---
 
 ```matlab
