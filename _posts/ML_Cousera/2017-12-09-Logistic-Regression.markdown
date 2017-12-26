@@ -85,7 +85,7 @@ Theta:
 It is clear that with `fminunc`, we are able to get a better solution of `0.203498` among the tested approaches. With these settings, let us take a look how does the decision boundary separate our classifier
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/logistic_regression/logistic_decision_boundary.png)
+![image]({{ site.baseurl }}/public/project-images/logistic_regression/logistic_decision_boundary.PNG)
 *Figure 3: The decision boundary after training our dataset*
 
 Therefore, using our trained model, we can now predict whether a student with get their admission based on their exams result.
