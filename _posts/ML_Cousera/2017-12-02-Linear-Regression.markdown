@@ -3,7 +3,7 @@ layout: "post"
 title: "Predicting Sales Profits and House Prices using Simple and Multiple Linear Regression"
 ---
 
-Linear regression is one of the most common supervised machine learning methods, where we are basically taking input variables and trying to fit the output onto a continuous expected result function. Generally, there are two types of Linear regression - **simple linear regression** (sometimes called univariate linear regression) and **multiple linear regression**. The former is used when you want to predict a sinlge output from a single input, while the latter is used when you want to predict a single output form multiple inputs.
+Linear regression is one of the most common supervised machine learning methods, where we are basically taking input variables and trying to fit the output onto a continuous expected result function. Generally, there are two types of Linear regression - **simple linear regression** (sometimes called univariate linear regression) and **multiple linear regression**. The former is used when you want to predict a single output from a single input, while the latter is used when you want to predict a single output form multiple inputs.
 
 #### Simple Linear Regression
 ---
@@ -36,7 +36,7 @@ xlabel('Population of City in 10,000s');
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/linear_regression/fit.png)
+![image]({{ site.baseurl }}/public/project-images/linear_regression/fit.PNG)
 *Figure 1: Visualizing the scatter plot*
 
 
@@ -63,7 +63,7 @@ legend('Training data', 'Linear regression')
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/linear_regression/training.png)
+![image]({{ site.baseurl }}/public/project-images/linear_regression/training.PNG)
 *Figure 2: Fitting $$\theta$$ into our dataset*
 
 Based on how our model fits, we would be able to predict our profits given different input, such as:
@@ -81,12 +81,12 @@ For population = 70,000, we predict a profit of 45342.450129
 Whenever we want to better understand the behavior of our cost function $$J(\theta)$$, it is always useful to plot it and visualize, either using a surface or contour plot, because it gives us a better sense on how $$J(\theta)$$ varies with changes in $$\theta_0$$ and $$\theta_1$$.
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/linear_regression/surface.png)
+![image]({{ site.baseurl }}/public/project-images/linear_regression/surface.PNG)
 *Figure 3: Visualizing cost function $$J(\theta)$$ using surface*
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/linear_regression/contour.png)
-*Figure 4:  Visualizing cost function $$J(\theta)$$ using contour, showing minimum*.
+![image]({{ site.baseurl }}/public/project-images/linear_regression/contour.PNG)
+*Figure 4:  Visualizing cost function $$J(\theta)$$ using contour, showing minimum*
 
 
 #### Multiple Linear Regression
@@ -113,7 +113,7 @@ ylabel('Cost J');
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/linear_regression/convergence_graph.png)
+![image]({{ site.baseurl }}/public/project-images/linear_regression/convergence_graph.PNG)
 *Figure 5:  Graph of convergence of Cost J across 400 iterations with $$\alpha=0.01$$*
 
 In Figure 6, we tested using different learning rate, $$\alpha$$ to study the effects it has towards the convergence graph. It is prudent that with a higher $$\alpha$$, cost J tends to converge much faster. But do keep in mind that using a high $$\alpha$$ might affect the solution in a way where it might not be able to arrive at the global optimum since the is a high possibility of overshot. On the contrary, using a low $$\alpha$$ value will increase the chance of reaching the global optimum, but it will be computational expensive, since gradient descent will be taking one small step in each iteration to reach the global optimum.
