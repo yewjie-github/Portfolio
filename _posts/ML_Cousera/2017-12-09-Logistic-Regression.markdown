@@ -39,7 +39,7 @@ The cost function for logistic regression that we will be minimizing is
 
 $$J(\theta)=\frac{1}{m}\sum_{i=1}^m [-y^{(i)}\log(h_\theta(x^{(i)}))-(1-y^{(i)})\log(1-h_\theta(x^{(i)}))]$$
 
-and the gradient of the cost is a vector of the same length as $$\theta$$ where the $$j^{th}$$ element $$(for j=0,1,...,n)$$ is defined as follows:
+and the gradient of the cost is a vector of the same length as $$\theta$$ where the $$j^{th}$$ element $$(for\quad j=0,1,...,n)$$ is defined as follows:
 
 $$\frac{\delta J(\theta)}{\delta\theta_j}=\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}$$
 
