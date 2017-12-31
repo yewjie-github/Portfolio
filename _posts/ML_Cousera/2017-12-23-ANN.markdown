@@ -60,7 +60,7 @@ a_3^{(2)}=g(\theta_{30}^{(1)}x_0+\theta_{31}^{(1)}x_2+\theta_{32}^{(1)}x_2+\thet
 h_\theta(x)=a_1^{(3)}=g(\theta_{10}^{(2)}a_0^{(2)}+\theta_{11}^{(2)}a_1^{(2)}+\theta_{12}^{(2)}a_2^{(2)}+\theta_{13}^{(2)}a_3^{(2)})
 $$
 
-Although it may seem complex theoretically, but using a powerful concept called **vectorization**, we only requires few lines of code in **MATLAB/OCTAVE** to fully implement this whole idea. _Pretty DOPE!_
+Although it may seem complex theoretically, but using a powerful concept called **vectorization**, we only requires few lines of code in **MATLAB/OCTAVE** to fully implement this idea. _Pretty DOPE!_
 
 ```matlab
 % adding one more columns (bias value) of 1's to the first layer
@@ -81,11 +81,11 @@ a3 = sigmoid(a2 * Theta2');
 
 Since we want to classify data into multiple classes, we let our hypotheses function return a vector of values. Say we wanted to classify our data into one of four final resulting classes:
 
-$$\begin{align*}\begin{bmatrix}x_0 \newline x_1 \newline x_2 \newline\cdots \newline x_n\end{bmatrix} \rightarrow\begin{bmatrix}a_0^{(2)} \newline a_1^{(2)} \newline a_2^{(2)} \newline\cdots\end{bmatrix} \rightarrow\begin{bmatrix}a_0^{(3)} \newline a_1^{(3)} \newline a_2^{(3)} \newline\cdots\end{bmatrix} \rightarrow \cdots \rightarrow\begin{bmatrix}h_\Theta(x)_1 \newline h_\Theta(x)_2 \newline h_\Theta(x)_3 \newline h_\Theta(x)_4 \newline\end{bmatrix} \rightarrow\end{align*}$$
+$$\begin{align*}\begin{bmatrix}x_0 \newline x_1 \newline x_2 \newline\cdots \newline x_n\end{bmatrix} \rightarrow\begin{bmatrix}a_0^{(2)} \newline a_1^{(2)} \newline a_2^{(2)} \newline\cdots\end{bmatrix} \rightarrow\begin{bmatrix}a_0^{(3)} \newline a_1^{(3)} \newline a_2^{(3)} \newline\cdots\end{bmatrix} \rightarrow \cdots \rightarrow\begin{bmatrix}h_\theta(x)_1 \newline h_\theta(x)_2 \newline h_\theta(x)_3 \newline h_\theta(x)_4 \newline\end{bmatrix} \rightarrow\end{align*}$$
 
 Our final layer of nodes, when multiplied by its theta matrix, will result in another vector, on which we will apply the $$g()$$ logistic function to get a vector of hypothesis values, which look like:
 
-$$h_\Theta(x) =\begin{bmatrix}0 \newline 0 \newline 1 \newline 0 \newline\end{bmatrix}$$
+$$h_\theta(x) =\begin{bmatrix}0 \newline 0 \newline 1 \newline 0 \newline\end{bmatrix}$$
 
 In which case our resulting class is the third one down, or $$h_\theta(x)_3$$. We can define our set of resulting classes as `y`, where
 
@@ -158,7 +158,7 @@ Our multi-class Neural Network was capable to record a decent accuracy of `97.5`
 Training Set Accuracy: 97.520000
 ```
 
-We will take a look of another important part of Neural Network which covers back-propagation in the upcoming post. Stay tuned, and bye for now!
+This is just the very tip of the iceberg for this amazing yet complex algorithm. We will discuss in more detail and an important part of Neural Network which covers back-propagation in the upcoming post. Stay tuned, and bye for now!
 
 
 
