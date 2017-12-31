@@ -222,7 +222,7 @@ From the table above, we can observe that smaller $$\lambda$$ (even no $$\lambda
 Up to this point, we have discussed many of the underlying mathematical theory that surrounds Neural Network. Now, for something more interesting, let us visualize the effects of $$\lambda$$ towards the hidden layer of our Neural Network in Figure 3.
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/ann_backprop/Visualize_all.PNG)
+![image]({{ site.baseurl }}/public/project-images/ann_backprop/Visualize_all.png)
 *Figure 3: Visualizing hidden layers using different $$\lambda$$*
 
 As we can observe, as the value of $$\lambda$$ increases from small to big, the images get more blur and less define, which also illustrate the idea of regularization. Too little of regularization results in over-fitting, and too much of regularization results in under-fitting.
