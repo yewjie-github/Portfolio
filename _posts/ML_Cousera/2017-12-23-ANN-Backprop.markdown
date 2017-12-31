@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Back-propagation and Visualizing the Hidden Layers in Artificial Neural Network
+date: 
 ---
 
 This post is the continuation from our [previous]({{ site.baseurl}}{% post_url /ML_Coursera/2017-12-23-ANN %}) discussion on using Neural Network for handwriting recognition, where we will cover Neural Network in more detail in this post involving feed-forward and back-propagation. We will continue using our data for handwriting recognition, where our weights are predefined in [`ex4weights.mat`](https://github.com/yewjie-github/Machine_Learning_Coursera/blob/master/Neural%20Networks%2C%20Backpropagation%20and%20Visualizing%20the%20Hidden%20Layers/ex4weights.mat).
