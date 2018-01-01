@@ -147,3 +147,10 @@ To wrap it up, it is important to understand that most real-world analyses have 
 | Provides estimates of both the strength and size of the relationships among features and the outcome | Does not handle missing data                                                   |
 |                                                                                                      | Only works with numeric features, so categorical data requires extra processing |
 |                                                                                                      | Requires some knowledge of statistics to understand the model                  |
+
+
+##### References
+---
+
+##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 1: Linear Regression]. MOOC offered by Stanford University, Coursera. Retrieved on December 2, 2017 from https://www.coursera.org/learn/machine-learning/resources/O756o
+##### 2. Lantz, B. (n.d.). Machine learning with R. 2nd ed. Birmingham & Mumbai: PACKT Publishing, p.181.

@@ -161,5 +161,7 @@ Training Set Accuracy: 97.520000
 This is just the very tip of the iceberg for this amazing yet complex algorithm. We will discuss in more detail and an important part of Neural Network which covers back-propagation in the upcoming post. Stay tuned, and bye for now!
 
 
+##### References
+---
 
-
+##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 3: Multi-class Classification and Neural Network]. MOOC offered by Stanford University, Coursera. Retrieved on December 23, 2017 from https://www.coursera.org/learn/machine-learning/resources/JOjNO

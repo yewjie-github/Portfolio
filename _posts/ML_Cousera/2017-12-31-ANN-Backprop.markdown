@@ -237,3 +237,11 @@ To wrap it up, the following table compares the strengths and weaknesses of Arti
 That is all for now. Do stop by here again next year for more updated! 
 
 Wishing you all a **Happy New Year!!!**
+
+
+##### References
+---
+
+##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 4: Neural Network Learning]. MOOC offered by Stanford University, Coursera. Retrieved on December 31, 2017 from https://www.coursera.org/learn/machine-learning/resources/Uuxg6
+
+##### 2. Lantz, B. (n.d.). Machine learning with R. 2nd ed. Birmingham & Mumbai: PACKT Publishing, p.230.

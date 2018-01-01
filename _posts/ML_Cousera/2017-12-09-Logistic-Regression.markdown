@@ -127,8 +127,14 @@ From our observation of a size `100`, we can then compute the accuracy of our mo
 p = predict(theta, X);
 acc = mean(double(p == y)) * 100);
 ```
+
 ```
 Train Accuracy: 89.000000
 ```
 
 This wrap-ups the idea of Logistic Regression, where we can use it model binary categorical outcome. Of course, this post highlight the very surface of this supervised machine learning method, in real-world problems, most of the time the data are not linearly separable. How do we use Logistic Regression to solve problems of such? Stay tunned for the following update!
+
+##### References
+---
+
+##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 2: Logistic Regression]. MOOC offered by Stanford University, Coursera. Retrieved on December 9, 2017 from https://www.coursera.org/learn/machine-learning/resources/O756o
