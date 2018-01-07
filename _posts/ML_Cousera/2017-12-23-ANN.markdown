@@ -164,4 +164,4 @@ This is just the very tip of the iceberg for this amazing yet complex algorithm.
 ##### References
 ---
 
-##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 3: Multi-class Classification and Neural Network]. MOOC offered by Stanford University, Coursera. Retrieved on December 23, 2017 from https://www.coursera.org/learn/machine-learning/resources/JOjNO
+##### 1. Ng, A. "Machine Learning" [Programming Exercise 3: Multi-class Classification and Neural Network]. MOOC offered by Stanford University, Coursera. Retrieved on December 23, 2017 from https://www.coursera.org/learn/machine-learning/resources/JOjNO

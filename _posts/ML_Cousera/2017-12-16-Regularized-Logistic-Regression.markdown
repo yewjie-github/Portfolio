@@ -106,4 +106,4 @@ Notice the changes in the decision boundary as we vary $$\lambda$$. With a small
 ##### References
 ---
 
-##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 2: Logistic Regression]. MOOC offered by Stanford University, Coursera. Retrieved on December 16, 2017 from https://www.coursera.org/learn/machine-learning/resources/fz4AU
+##### 1. Ng, A. "Machine Learning" [Programming Exercise 2: Logistic Regression]. MOOC offered by Stanford University, Coursera. Retrieved on December 16, 2017 from https://www.coursera.org/learn/machine-learning/resources/fz4AU

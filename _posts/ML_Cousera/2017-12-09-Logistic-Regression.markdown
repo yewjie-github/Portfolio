@@ -137,4 +137,4 @@ This wrap-ups the idea of Logistic Regression, where we can use it model binary 
 ##### References
 ---
 
-##### 1. Ng, Andrew. "Machine Learning" [Programming Exercise 2: Logistic Regression]. MOOC offered by Stanford University, Coursera. Retrieved on December 9, 2017 from https://www.coursera.org/learn/machine-learning/resources/O756o
+##### 1. Ng, A. "Machine Learning" [Programming Exercise 2: Logistic Regression]. MOOC offered by Stanford University, Coursera. Retrieved on December 9, 2017 from https://www.coursera.org/learn/machine-learning/resources/O756o
