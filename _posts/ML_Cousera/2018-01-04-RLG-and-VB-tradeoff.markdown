@@ -164,17 +164,17 @@ In this post, we will use a polynomial degree of `8` for the sake of discussion,
 
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/lambda0_fit.png)
+![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/lambda0_fit.PNG)
 *Figure 4: Polynomial fit when $$\lambda$$ = `0`*
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/learning_curve_lambda0.png)
+![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/learning_curve_lambda0.PNG)
 *Figure 5: Polynomial learning curve when $$\lambda$$ = `0`*
 
 Comparing these set of output relative to the ones we obtained using linear regression model, we observe a better fitting of the model to the dataset and the learning curve is able to records very little errors as the number of training data increases. However this is another typical example of over-fitting. Hence, we will need to consider regularization in this case, where we will tune the polynomial fitting and learning curve using different value for $$\lambda$$, where $$\lambda$$ = 0.1, 1, 3,10 and 100 respectively. Figure 6 compares the result of each $$\lambda$$ value.
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/all.png)
+![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/all.PNG)
 *Figure 6: Polynomial fittings and learning curves when $$\lambda$$ = `[0.1,1,3,10,100]`*
 
 It is obvious that the value of $$\lambda$$ can significantly affect the results of regularized polynomial regression on the training set and cross validation set. A model without regularization or small regularization fits the training set well, but does not generalize well, causing over-fitting. On the contrary, a model with too much regularization does not fits the training set well, causing under-fitting. A better choice of $$\lambda$$ will the ones when $$\lambda$$ = `1` or `3`.
