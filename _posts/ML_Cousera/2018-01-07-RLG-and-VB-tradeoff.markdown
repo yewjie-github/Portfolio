@@ -34,7 +34,7 @@ ylabel('Water flowing out of the dam (y)');
 ```
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/visualize_plot.png)
+![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/visualize_plot.PNG)
 *Figure 1: Visualizing the data*
 
 Recall that regularized linear regression has the following cost function
@@ -71,7 +71,7 @@ Cost at theta = [1 ; 1]: 303.993192
 Since the dataset is of such low dimension , where we are trying to fit a 2D $$\theta$$, regularization will not be playing a crucial part, we will set our regularization parameter $$\lambda$$ = `0` for this part. Furthermore, when plotting the best fit line to our data in Figure 2, we notice that it is not a good fit to the data since the data is non-linear in nature. To fit this dataset better, we will use polynomial regression in later part. We will first implement a function to generate learning curves that can help us debug our learning algorithm. 
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/initial_fit.png)
+![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/initial_fit.PNG)
 *Figure 2: Linear fit is not a a good fit to our data*
 
 #### Bias-Variance Trade-off
