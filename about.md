@@ -8,7 +8,7 @@ Hi, I am Yew Jie.
 
 Born and raised in Penang, did my Computer Science Degree in Sabah and currently chasing after my life goals in Kuala Lumpur. And yup you are right, I just enjoy being into different places!
 
-I aspire to be the best Data Scientist that I can ever become, and my background up to date has been always centered around preparing myself to be one. Each day after work, I take one small step in improving myself, from learning the nut-and-bolts of a machine learning algorithm, big-data concepts, documenting the knowledge I learnt, to building this website and maintaining it and the list goes on and on. It was never mundane to me as I enjoy doing all of these and it has already been part of my _daily ritual_. After all, being a Data Scientist in not a destination, but a journey. Like what Jack Ma said, _after work, is what determines your future._
+I aspire to be the best Data Scientist I can ever become, and my background up to date has been always centered around preparing myself to be one. Each day after work, I take one small step in improving myself, from learning the nuts-and-bolts of a machine learning algorithm, big-data concepts, documenting the knowledge I learnt, to building this website and maintaining it and the list goes on and on. It was never mundane to me as I enjoy doing all of these and it has already been part of my _daily ritual_. After all, being a Data Scientist in not a destination, but a journey. Like what Jack Ma said, _after work, is what determines your future._
 
 > After work, is what determines your future. - Jack Ma
 
