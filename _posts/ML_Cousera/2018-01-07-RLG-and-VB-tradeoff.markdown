@@ -181,7 +181,17 @@ It is obvious that the value of $$\lambda$$ can significantly affect the results
 
 #### Conclusion
 ---
-As discussed here, plotting the learning curves to understand what problem (whether a bias or variance problem) our current dataset is experiencing is a crucial procedure to understand how well our machine learning algorithm is working. To conclude, the following table summarizes the different approaches one way consider when debugging a learning algorithm.
+As discussed here, plotting the learning curves to understand what problem (whether a bias or variance problem) our current dataset is experiencing is a crucial procedure to understand how well our machine learning algorithm is working. To recap, remember
+
+**High Bias = Under-fitting (BU)**: both $$J_{train}(\theta)$$ and $$J_{CV}(\theta)$$ will be high. Also, $$J_{train}(\theta) \approx J_{train}(\theta)$$
+
+**High Variance = Over-fitting (VO)**: $$J_{train}(\theta)$$ will be low and $$J_{CV}(\theta)$$ will be much greater than $$J_{train}(\theta)$$
+
+{: .center}
+![image]({{ site.baseurl }}/public/project-images/regularized_linear_regression/Features-and-polynom-degree.png)
+*Figure 7: BU-VO!*
+
+To conclude, the following table summarizes the different approaches one way consider when debugging a learning algorithm.
 
 |                                 | Fixes Problem of |
 |---------------------------------|------------------|
