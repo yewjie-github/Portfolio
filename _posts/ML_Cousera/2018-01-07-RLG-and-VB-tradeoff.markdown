@@ -198,4 +198,4 @@ As discussed here, plotting the learning curves to understand what problem (whet
 ##### References
 ---
 
-##### 1. Ng, A. "Machine Learning" [Programming Exercise 4: Neural Network Learning]. MOOC offered by Stanford University, Coursera. Retrieved on January 7, 2018 fromhttps://www.coursera.org/learn/machine-learning/resources/LIZza
+##### 1. Ng, A. "Machine Learning" [Programming Exercise 4: Neural Network Learning]. MOOC offered by Stanford University, Coursera. Retrieved on January 7, 2018 from https://www.coursera.org/learn/machine-learning/resources/LIZza
