@@ -1,0 +1,240 @@
+---
+layout: post
+---
+
+Support Vector Machine (SVM) is another kind of supervised machine learning algorithm and can be imagined as a surface that produces a boundary between points of data plotted in multi-dimensional that represent examples and their features values. The ultimate goal of a SVM is to produce a flat boundary called a **hyperplane**, which separates the space to create fairly similar partitions on either side.
+
+Our SVM has a cost function of 
+
+$$J(\theta) = C\sum_{i=1}^m y^{(i)} \ \text{cost}_1(\theta^Tx^{(i)}) + (1 - y^{(i)}) \ \text{cost}_0(\theta^Tx^{(i)}) + \dfrac{1}{2}\sum_{j=1}^n \Theta^2_j$$
+
+where $$C= \frac{1}{\lambda}$$ and is used as a regularization parameter. Therefore, when we want to regularize more i.e. reduce over-fitting, we decrease $$C$$, and when we want to regularize less i.e. reduce under-fitting, we increase $$C$$.
+
+It is also important to note that the hypothesis of  the SVM is not interpreted as the probability of $$y$$ being 1 or 0 (as it is for the hypothesis of logistic regression). Instead, it outputs either 1 or 0.
+
+$$h_\theta(x) =\begin{cases}    1 & \text{if} \ \theta^Tx \geq 0 \\    0 & \text{otherwise}\end{cases}$$
+
+Before we get deeper into more complex SVM examples, let us have a better intuition of how SVM works, particularly, understanding how $$C$$ affects the decision boundary.
+
+Suppose we have a simple dataset, which is linearly separable like in Figure 1
+
+{: .center}
+![image]({{ site.baseurl }}/public/project-images/svm/linear_separable_dataset.PNG)
+*Figure 1: Linear separable dataset*
+
+We use different values of the $$C$$ parameters to illustrate how the decision boundaries varies in each when $$C$$ = `1`,`10`,`100` and `1000` in Figure 2.
+
+{: .center}
+![image]({{ site.baseurl }}/public/project-images/svm/all_c_linear.png)
+*Figure 2: Linear decision boundaries produced using different $$C$$ values.*
+
+Notice how $$C$$ affects the decision boundary. A large $$C$$ tells the SVM to try to classify all the examples correctly, which do not really maximize the margin between the two classes (positive and negative) and results in over-fitting. If we have outlier examples that we do not want to affect the decision boundary, then we can reduce $$C$$. $$C$$ plays a role similar to $$\frac{1}{\lambda}$$, where $$\lambda$$ is the regularization parameter that we we using previously for logistic regression.
+
+#### Gaussian Kernel
+---
+
+Now to the more interesting part, we will use SVM to do non-linear classification with the Gaussian kernels. Kernels enable us to make complex and non-linear classifiers using SVM. The idea behind this concept is that, given $$x$$, we compute new feature depending on proximity to landmarks $$l^{(1)}$$, $$l^{(2)}$$, $$l^{(3)}$$...
+
+To achieve this this, we will first need to find the "similarity" of $$x$$ and some landmark $$l^{(i)}$$, i.e.
+
+$$f_i = similarity(x, l^{(i)}) = \exp(-\dfrac{||x - l^{(i)}||^2}{2\sigma^2})$$
+
+```matlab
+% matlab implementation
+sim = exp(-sumsq(x1-x2)/(2*(sigma^2)));
+```
+
+
+This "similarity" function is what we refer as **Gaussian Kernel**. There are a few interesting properties of Gaussian Kernel:
+* When $$x \approx l^{(i)}$$, then $$f_i = \exp(-\dfrac{\approx 0^2}{2\sigma^2}) \approx 1$$
+* When $$x$$ is far from $$l^{(i)}$$, then $$f_i = \exp(-\dfrac{(large\ number)^2}{2\sigma^2}) \approx 0$$
+
+Each of the landmark gives us the features in our hypothesis
+
+$$\begin{align*}l^{(1)} \rightarrow f_1 \newline l^{(2)} \rightarrow f_2 \newline l^{(3)} \rightarrow f_3 \newline\dots \newline h_\theta(x) = \theta_1f_1 + \theta_2f_2 + \theta_3f_3 + \dots\end{align*}$$
+
+$$\sigma^2$$ is a parameter of the Gaussian Kernel, and it can be modified to increase or decrease the drop-off of our feature $$f_i$$, which brings us to the next question, where and how do you produce landmarks?
+
+One way to get the landmarks is to put them in the exact same locations as all the training examples, resulting in $$m$$ landmarks, with one landmark per training example, i.e. 
+
+$$f_1 = similarity(x,l^{(1)})$$, $$f_2 = similarity(x,l^{(2)})$$, $$f_3 = similarity(x,l^{(3)})...$$ 
+
+With this, we can use the SVM minimization algorithm but with $$f^{(i)}$$ substituted in for $$x^{(i)}$$:
+
+$$\min_{\theta} C \sum_{i=1}^m y^{(i)}\text{cost}_1(\theta^Tf^{(i)}) + (1 - y^{(i)})\text{cost}_0(\theta^Tf^{(i)}) + \dfrac{1}{2}\sum_{j=1}^n \theta^2_j$$
+
+For a non-linear problem, like in Figure 3, we will use SVM with Gaussian Kernel with different settings to understand how decision boundaries will differ.
+
+{: .center}
+![image]({{ site.baseurl }}/public/project-images/svm/non_linear_dataset.PNG)
+*Figure 3: Non-linear separable dataset*
+
+Again, to illustrate how the effects of $$C$$ affects the decision boundary, we will use 
+
+We use different values of the $$C$$ parameters to illustrate how the decision boundaries varies in each when $$C$$ = `1`,`10`,`100` and `1000` with $$\sigma^2$$ fixed at `0.01` in Figure 4.
+
+{: .center}
+![image]({{ site.baseurl }}/public/project-images/svm/all_c_nonlinear.png)
+*Figure 4: Non-linear decision boundaries produced using different $$C$$ values with $$\sigma^2$$ fixed at `0.01`.*
+
+Since it is obvious that when $$C$$ = `1` gives us the best boundary among the other tested values, we will fix this value and change the $$\sigma$$ value. This will help us understand the effects of it towards the decision boundaries. We will test with $$\sigma^2$$ values = `0.01`, `0.03`, `0.1` and `0.3`.
+
+{: .center}
+![image]({{ site.baseurl }}/public/project-images/svm/all_c_nonlinear_sigmachange.png)
+*Figure 5: Non-linear decision boundaries produced using different $$\sigma^2$$ values with $$C$$ fixed at `1`.*
+
+Comparing this two different parameter between $$C$$ and $$\sigma^2$$, it is obvious that $$\sigma^2$$ has a greater 'disruptive' effects towards the decision boundary, where a slight change of it will very much change the entire landscape of the decision boundary. 
+
+#### Email Spam Classifier
+---
+
+Next, we will build our spam classifier using SVM to filter emails (linearly separable dataset in this case). We will only be using the body of the email (excluding headers). Suppose we have the following chunk of text below
+
+
+> Anyone knows how much it costs to host a web portal ?
+>
+Well, it depends on how many visitors you're expecting.
+This can be anywhere from less than 10 bucks a month to a couple of $100. 
+You should checkout http://www.rackspace.com/ or perhaps Amazon EC2 
+if youre running something big..
+>
+To unsubscribe yourself from this mailing list, send an email to:
+groupname-unsubscribe@egroups.com
+
+Before building our SVM classifier, it is important to pre-process our data, especially when we are dealing with text. This will essentially improves the performance. Typical text preprocessing includes:
+* **Lower-casing**: The entire email is converted into lower case
+* **Stripping HTML**: Removing HTML tags, so can we retain only the contents
+* **Normalizing URLs**: All URLs are replace with the text "httpaddr"
+* **Normalizing Email Addresses**: All email addresses are replaced with the text "emailaddr"
+* **Normalizing Numbers**: All numbers are substituted with "number"
+* **Word Stemming**: Words are reduced to their stemmed form
+* **Removal of non-words**: Non-words and punctuation have been removed.
+
+```matlab
+% Preprocessing text using Regular Expressions
+% Lower case
+email_contents = lower(email_contents);
+
+% Strip all HTML
+% Looks for any expression that starts with < and ends with > and replace
+% and does not have any < or > in the tag it with a space
+email_contents = regexprep(email_contents, '<[^<>]+>', ' ');
+
+% Handle Numbers
+% Look for one or more characters between 0-9
+email_contents = regexprep(email_contents, '[0-9]+', 'number');
+
+% Handle URLS
+% Look for strings starting with http:// or https://
+email_contents = regexprep(email_contents, ...
+                           '(http|https)://[^\s]*', 'httpaddr');
+
+% Handle Email Addresses
+% Look for strings with @ in the middle
+email_contents = regexprep(email_contents, '[^\s]+@[^\s]+', 'emailaddr');
+```
+
+After preprocessing, our original chunk of text will look like 
+
+>
+==== Processed Email ====
+>
+anyon know how much it cost to host a web portal well it depend on how mani visitor you re expect thi can be anywher from less than number buck a month to a coupl of dollarnumb you should checkout httpaddr or perhap amazon ecnumb if your run someth big to unsubscrib yourself from thi mail list send an email to emailaddr
+
+After cleaning, we will extract the feature that converts each email into a vector. Where we will count the occurrence of a particular word in an email. Then, we will load it into our SVM classifier. Once the training completes with $$C$$ = `1`, we will be expecting a training accuracy of approximately `99.9%` and a test accuracy of about `97.7%`.
+
+To understand what makes an email to be classified as spam, we can take a look at the top predictors of spam:
+
+```
+our             (0.720293)
+flash           (0.561777)
+wi              (0.557910)
+numberb         (0.550848)
+remov           (0.533084)
+visit           (0.488539)
+click           (0.486210)
+bodi            (0.469367)
+guarante        (0.460334)
+tel             (0.457512)
+instruct        (0.455643)
+send            (0.453376)
+basenumb        (0.412961)
+tm              (0.408305) 
+dollarnumb      (0.408257)
+```
+
+Using the previous chunk of text, our classifier to predict as spam.
+
+```
+Spam Classification: 1
+1 indicates spam, 0 indicates not spam)
+```
+
+Using another text example:
+>
+Folks,
+> 
+my first time posting - have a bit of Unix experience, but am new to Linux.
+> 
+Just got a new PC at home - Dell box with Windows XP. Added a second hard disk
+for Linux. Partitioned the disk and have installed Suse 7.2 from CD, which went
+fine except it didn't pick up my monitor.
+> 
+I have a Dell branded E151FPp 15" LCD flat panel monitor and a nVidia GeForce4
+Ti4200 video card, both of which are probably too new to feature in Suse's default
+set. I downloaded a driver from the nVidia website and installed it using RPM.
+Then I ran Sax2 (as was recommended in some postings I found on the net), but
+it still doesn't feature my video card in the available list. What next?
+> 
+Another problem. I have a Dell branded keyboard and if I hit Caps-Lock twice,
+the whole machine crashes (in Linux, not Windows) - even the on/off switch is
+inactive, leaving me to reach for the power cable instead.
+> 
+If anyone can help me in any way with these probs., I'd be really grateful -
+I've searched the 'net but have run out of ideas.
+> 
+Or should I be going for a different version of Linux such as RedHat? Opinions
+welcome.
+> 
+Thanks a lot,
+Peter
+>
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+```
+Spam Classification: 0
+1 indicates spam, 0 indicates not spam)
+```
+
+Again, notice the difference between these two chunk of text, while the former chunk of text may look the typical email that went to our spam folder, and the latter may look more like a legit email.
+
+
+#### Conclusion
+---
+
+By now, we learned that SVM is actually a modification of logistic regression, so when do we use SVM and when do we use logistic regression?
+
+1. **Case 1:** If our number of features, $$n$$, is large (relative to our number of examples $$m$$), then we use logistic regression, or SVM without a kernel, since we do not have enough examples to need a complicated polynomial hypothesis.
+
+2. **Case 2:** If $$n$$ is small and $$m$$ is intermediate, then use SVM with a Gaussian Kernel, since we have enough examples that we may need a complex non-linear hypothesis.
+
+3. **Case 3:** If $$n$$ is small and $$m$$ is large, then we manually add/create more features, then use logistic regression or SVM without a kernel, since we want to increase our features so that logistic regression becomes applicable.
+
+To summarize, the table below provides the strengths and weaknesses of SVM
+
+| Strengths                                                                                                             | Weaknesses                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Can be used for classification or numeric prediction problems                                                         | Finding the best model requires testing of various combinations of kernels and model parameters    |
+| Not overly influenced by noisy data and not very prone to over-fitting                                                | Can be slow to train, particularly if the input dataset has a large number of features or examples |
+| May be easier to use than neural networks, particularly due to the existence of several well-supported SVM algorithms | Results in a complex black box model that is difficult, if not impossible, to interpret            |
+| Gaining popularity due to its high accuracy and high-profile wins in data mining competitions                         |                                                                                                    |
+
+##### References
+---
+
+##### 1. Ng, A. "Machine Learning" [Programming Exercise 4: Neural Network Learning]. MOOC offered by Stanford University, Coursera. Retrieved on 21 January, 2018 from https://www.coursera.org/learn/machine-learning/resources/Es9Qo
+
+##### 2. Lantz, B. (n.d.). Machine learning with R. 2nd ed. Birmingham & Mumbai: PACKT Publishing, p.247.
