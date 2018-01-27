@@ -108,7 +108,7 @@ Now that we have understand the fundamental theory behind K-means Algorithm, we 
 
 In a typical RGB encoding, an image is represented using 24 bits, where each pixel is represented as three 8-bit unsigned integers (ranging from 0 to 255) the **R**ed, **G**reen and **B**lue intensity values, hence the name **RGB**. 
 
-Here, we will be using 16 ($$k=16) colors to represent our _cute_ bird, and for each pixel in our image we now need to only store the index of the color at that location, i.e. where only 4 bits are necessary to represent 16 possibilities ($$2^4=16$$). 
+Here, we will be using 16 ($$k=16$$) colors to represent our _cute_ bird, and for each pixel in our image we now need to only store the index of the color at that location, i.e. where only 4 bits are necessary to represent 16 possibilities ($$2^4=16$$). 
 
 With the help of image packages in Octave/Matlab, our images can be easily represented with number.
 
