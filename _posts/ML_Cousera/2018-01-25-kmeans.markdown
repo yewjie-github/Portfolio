@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Compressing using K-Means Algorithm
+title: Image Compression using K-Means Algorithm
 ---
 
 So far, all the post here discussed here belong to the category of supervised learning. In this particular post, we will bring up **unsupervised learning**! Contrary to supervised learning, supervised learning uses an unlabeled training set rather than a labeled one, where we do not have the vector $$y$$ of expected results, we only have a dataset of features where we can find its structure.
