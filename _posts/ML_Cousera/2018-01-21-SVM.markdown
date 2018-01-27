@@ -236,6 +236,6 @@ To summarize, the table below provides the strengths and weaknesses of SVM
 ##### References
 ---
 
-##### 1. Ng, A. "Machine Learning" [Programming Exercise 4: Neural Network Learning]. MOOC offered by Stanford University, Coursera. Retrieved on 21 January, 2018 from https://www.coursera.org/learn/machine-learning/resources/Es9Qo
+##### 1. Ng, A. "Machine Learning" [Week 7 Lecture Notes]. MOOC offered by Stanford University, Coursera. Retrieved on 21 January, 2018 from https://www.coursera.org/learn/machine-learning/resources/Es9Qo
 
 ##### 2. Lantz, B. (n.d.). Machine learning with R. 2nd ed. Birmingham & Mumbai: PACKT Publishing, p.247.

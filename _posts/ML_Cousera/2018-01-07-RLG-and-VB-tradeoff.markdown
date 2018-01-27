@@ -208,4 +208,4 @@ To conclude, the following table summarizes the different approaches one way con
 ##### References
 ---
 
-##### 1. Ng, A. "Machine Learning" [Programming Exercise 4: Neural Network Learning]. MOOC offered by Stanford University, Coursera. Retrieved on January 7, 2018 from https://www.coursera.org/learn/machine-learning/resources/LIZza
+##### 1. Ng, A. "Machine Learning" [Week 6 Lecture Notes]. MOOC offered by Stanford University, Coursera. Retrieved on January 7, 2018 from https://www.coursera.org/learn/machine-learning/resources/LIZza
