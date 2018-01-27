@@ -113,6 +113,7 @@ Here, we will be using 16 ($$k=16$$) colors to represent our _cute_ bird, and fo
 With the help of image packages in Octave/Matlab, our images can be easily represented with number.
 
 ``matlab
+% Octave/Matlab implementation
 Image = imread('original.png');
 ```
 
