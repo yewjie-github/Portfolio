@@ -128,7 +128,7 @@ Once we implement our K-Means Algorithm with $$k=16$$, we will be able to compre
 We can easily change the number of $$k$$ to study the effects it brings to image compression, Figure 3 and Figure 4 shows the result of the compressed image using $$k=14$$ and $$k=18$$ respectively.
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/kmeans/compress_image_14.png)
+![image]({{ site.baseurl }}/public/project-images/kmeans/compress_image_14.PNG)
 *Figure 3: Our original image vs. Compressed image using 14 colors.*
 
 {: .center}
