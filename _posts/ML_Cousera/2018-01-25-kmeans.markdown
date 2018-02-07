@@ -3,7 +3,7 @@ layout: post
 title: Image Compression using K-Means Algorithm
 ---
 
-So far, all the post here discussed here belong to the category of supervised learning. In this particular post, we will bring up **unsupervised learning**! Contrary to supervised learning, supervised learning uses an unlabeled training set rather than a labeled one, where we do not have the vector $$y$$ of expected results, we only have a dataset of features where we can find its structure.
+So far, all the post discussed here belong to the category of supervised learning. In this particular post, we will bring up **unsupervised learning**! Contrary to supervised learning, supervised learning uses an unlabeled training set rather than a labeled one, where we do not have the vector $$y$$ of expected results, we only have a dataset of features where we can find its structure.
 
 One fine example of unsupervised learning is clustering. When explained in a non-technical way, it is same to the English saying, _birds of a feather flock together_! Clustering is widely applied in solving many modern day problems, ranging from marketing, social media, medical, astronomy and many more...Today we will discuss one of the most popular and often used algorithm - **K-means Algorithm** - for automatically grouping data into coherent subsets ($$k$$ refer to the number of clusters), where members of each cluster will share similar patterns.
 
@@ -69,7 +69,7 @@ for i = 1:K
   centroids(i,:) = sum(X(index_i,:)) / length(index_i);
 ```
 
-**4. Re-run **Step 2** and **Step 3** until the averages do not change any more.**
+**4. Re-run Step 2 and Step 3 until the averages do not change any more.**
 
 
 
