@@ -70,7 +70,7 @@ It is also interesting to note that we can reverse this process, i.e. reconstruc
 
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/pca/visualize_pca2.png)
+![image]({{ site.baseurl }}/public/project-images/pca/visualize_pca2.PNG)
 *Figure 3: The original and projected data after PCA*
 
 In Figure 3, the original data points are indicated with blue circles, while the projected data points are indicated with red circles.
@@ -82,25 +82,25 @@ Now let us try PCA on Face Images dataset, where each face image is 32 x 32 in g
 
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/pca/face_full.png)
+![image]({{ site.baseurl }}/public/project-images/pca/face_full.PNG)
 *Figure 4: Face dataset*
 
 To understand how the number of principle components, $$k$$, affects the compression process, we will gradually increase the number of $$k$$ and understand how they affect compression output. We tried using $$k$$ = `4`,`12`,`36`, and `100`. The compression results are showed in Figure 5 to Figure 8 respectively. Essentially, the goal is PCA is to reduce dimensionality in order to speed up our learning algorithm.
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/pca/face_4.png)
+![image]({{ site.baseurl }}/public/project-images/pca/face_4.PNG)
 *Figure 5: PCA with `4` principle components*
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/pca/face_12.png)
+![image]({{ site.baseurl }}/public/project-images/pca/face_12.PNG)
 *Figure 6: PCA with `12` principle components*
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/pca/face_36.png)
+![image]({{ site.baseurl }}/public/project-images/pca/face_36.PNG)
 *Figure 7: PCA with `36` principle components*
 
 {: .center}
-![image]({{ site.baseurl }}/public/project-images/pca/face_100.png)
+![image]({{ site.baseurl }}/public/project-images/pca/face_100.PNG)
 *Figure 8: PCA with `100` principle components*
 
 Given our original dataset of 1024 dimensions, notice how PCA is able to reduce it down to 100 dimensions without significant lost of the features on each of the faces. Pretty remarkable!
