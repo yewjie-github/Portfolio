@@ -125,7 +125,7 @@ We can use `S` which is a diagonal matrix and help us determine the appropriate 
 
 $$\dfrac{\sum_{i=1}^kS_{ii}}{\sum_{i=1}^nS_{ii}} \geq 0.99$$
 
-However, as Ng suggests, any number greater than 85% is still an acceptable percentage to report that your PCA algorithm is still working fine!
+However, as Ng suggests, any number greater than 0.85 (85%) is still an acceptable percentage to report that your PCA algorithm is still working fine!
 
 To wrap it up, the goal of PCA is use to **reduce dimensionality of data**, **speed up learning algorithm** and **data visualization**. It is also important to note that we try not to assume we need to do PCA. We should try our learning without PCA and also use PCA if necessary.
 
