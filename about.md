@@ -12,7 +12,11 @@ I aspire to be the best Data Scientist I can ever become, and my background up t
 
 > After work, is what determines your future. - Jack Ma
 
-As a Data Production Specialist at [LocalGravity](https://www.localgravity.com/), allow me to introduce you to my favorite bar..._*SPACEBAR*_ - which I heavily depend on daily. My day to day duty include scrapping **_lots and lots_** of retailer's store locations for countries across South East Asia (SEA), **_lots and lots_** of VLOOKUP, Pivot Table and Regular Expression to manipulate data, **_lots and lots_** of geocoding and address segmentation using R! All these work gave me a good understanding of the retail landscape in SEA. You can also frequently catch me hanging out at StackOverflow and GitHub throughout the day and I seriously cannot imagine a world without these sites!
+As an Insights Analyst, I had the honor and privilege to work with reputable clients across the region ranging from the oil and gas, consumer goods and retail industry. 
+
+With ever-changing customer needs, managing customer loyalty had been more challenging and there is definitely no one-size-fits-all solution. By leveraging my expertise in advanced analytics involving data analysis, data modeling, data visualization and storytelling, it allowed me to provide honest insights and feasible recommendations which clients can gradually act upon to improve their product and services. Also had the opportunity to work closely with clients through frequent presentation sessions, where I learn first-hand what clients really need and how to provide answers with the appropriate data.
+
+Previously as a Data Production Specialist at [LocalGravity](https://www.localgravity.com/), allow me to introduce you to my favorite bar..._*SPACEBAR*_ - which I heavily depend on daily. My day to day duty include scrapping **_lots and lots_** of retailer's store locations for countries across South East Asia (SEA), **_lots and lots_** of VLOOKUP, Pivot Table and Regular Expression to manipulate data, **_lots and lots_** of geocoding and address segmentation using R! All these work gave me a good understanding of the retail landscape in SEA. You can also frequently catch me hanging out at StackOverflow and GitHub throughout the day and I seriously cannot imagine a world without these sites!
 
 _To make things less boring..._
 
